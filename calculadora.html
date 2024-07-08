@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Consumo de Energía</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <header>
+
+        <H1>Bienvenido a la calculadora de consumo de energía</H1>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bolt" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M13 3l0 7l6 0l-8 11l0 -7l-6 0l8 -11" />
+          </svg>
+       </header>
+   
+</head>
+<body>
+    <div class="calculator">
+        <h2 class="titulo">Calculadora de Consumo de Energía</h2>
+
+        <label for="power" class="label">Potencia del dispositivo (Watts):</label>
+        <input type="number" id="power" placeholder="Ejemplo: 60" required>
+        
+        <label for="hours" class="label">Horas de uso diario:</label>
+        <input type="number" id="hours" placeholder="Ejemplo: 3" required>
+        
+        <label for="days" class="label">Días de uso al mes:</label>
+        <input type="number" id="days" placeholder="Ejemplo: 30" required>
+        
+        <button onclick="calcularConsumo()">Calcular Consumo</button>
+        
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        function calcularConsumo() {
+            // Obtener los valores ingresados por el usuario
+            let power = document.getElementById('power').value;
+            let hours = document.getElementById('hours').value;
+            let days = document.getElementById('days').value;
+            
+            // Validar que todos los campos estén llenos
+            if (power === '' || hours === '' || days === '') {
+                alert('Por favor, completa todos los campos.');
+                return;
+            }
+            
+            // Convertir los valores a números
+            power = parseFloat(power);
+            hours = parseFloat(hours);
+            days = parseFloat(days);
+            
+            // Calcular el consumo de energía en kWh
+            let consumoDiario = (power * hours) / 1000;
+            let consumoMensual = consumoDiario * days;
+            
+            // Mostrar el resultado
+            document.getElementById('result').innerText = `Consumo mensual: ${consumoMensual.toFixed(2)} kWh`;
+        }
+    </script>
+</body>
+</html>
