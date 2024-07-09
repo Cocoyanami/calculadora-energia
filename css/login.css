@@ -6,7 +6,7 @@ body {
     color: #1b262c;
     
     margin: 0;
-    background-color: #93ffab;
+    background-color: #0eecbc;
 }
 
 /* efectos para el contenedor de pantalla completa */
@@ -21,10 +21,10 @@ body {
     min-height: 100vh;
     width: 100%;
     height: 100%;
-    
+    /*
     background-image: url(../imagenes/fondo-degradado-tonos-verdes_23-2148382072.avif);
     background-position: center;
-    background-size: cover;
+    background-size: cover;*/
 }
 
 /* contenedor del login a la izquierda */
@@ -156,7 +156,7 @@ body {
 
 .titulo {
     font-size: 300%;
-    color:#dfcdc3;
+    color:#000000;
 }
 
 .logo-empresa img {
@@ -177,7 +177,7 @@ hr {
 .pie-form a {
     display: block;
     text-decoration: none;
-    color: #dfcdc3;
+    color: #000000;
     margin-bottom: 3px;
 }
 
