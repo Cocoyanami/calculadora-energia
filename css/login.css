@@ -6,7 +6,9 @@ body {
     color: #1b262c;
     
     margin: 0;
-    background-color: #0eecbc;
+    background-image: url(../imagenes/fondo-degradado-tonos-verdes_23-2148382072.avif);
+    background-position: center;
+    background-size: cover;
 }
 
 /* efectos para el contenedor de pantalla completa */
