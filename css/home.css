@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../imagenes/fondo-degradado-tonos-verdes_23-2148382072.avif);
+    background-position: center;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+}
+
+.header h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.tagline {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #76c043;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #64a938;
+}
+
+.info-graphics {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.graphic-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.graphic-item img {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.graphic-item p {
+    text-align: center;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #134d28;
+    padding: 10px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #76c043;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #134d28;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin-top: 80px; /* Adjusted to leave space for the fixed navbar */
+}
