@@ -1,21 +1,135 @@
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+    background-image: url(../imagenes/fondo-degradado-tonos-verdes_23-2148382072.avif );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     margin: 0;
     padding: 0;
-    min-width: 100vw;
     min-height: 100vh;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .card {
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(240, 15%, 9%);
+    --paragraph: hsl(0, 0%, 83%);
+    --line: hsl(240, 9%, 17%);
+    --primary: hsl(189, 92%, 58%);
+  
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
     width: 100%;
-    height: 100%;
-    
+    max-width: 20rem;
+    background-color: hsla(240, 15%, 9%, 1);
+    background-image: radial-gradient(
+        at 88% 40%,
+        hsla(240, 15%, 9%, 1) 0px,
+        transparent 85%
+    ),
+    radial-gradient(at 49% 30%, hsla(240, 15%, 9%, 1) 0px, transparent 85%),
+    radial-gradient(at 14% 26%, hsla(240, 15%, 9%, 1) 0px, transparent 85%),
+    radial-gradient(at 0% 64%, hsl(189, 99%, 26%) 0px, transparent 85%),
+    radial-gradient(at 41% 94%, hsl(189, 97%, 36%) 0px, transparent 85%),
+    radial-gradient(at 100% 99%, hsl(188, 94%, 13%) 0px, transparent 85%);
+    border-radius: 1rem;
+    box-shadow: 0px -16px 24px 0px rgba(255, 255, 255, 0.25) inset;
+  }
+  
+  .card .card__border {
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    z-index: -10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    background-image: linear-gradient(
+        0deg,
+        hsl(0, 0%, 100%) -50%,
+        hsl(0, 0%, 40%) 100%
+    );
+    border-radius: 1rem;
+  }
+  
+  .card_title__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card_title {
+    color: var(--white);
+    font-size: 1.2rem;
+  }
+  
+  .card_paragraph {
+    color: var(--paragraph);
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .line {
+    width: 100%;
+    border: 1px solid var(--line);
+  }
+  
+  .card__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .card__list_item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--white);
+  }
+  
+  .check_svg {
+    width: 1rem;
+    height: 1rem;
+    fill: var(--primary);
+  }
+  
+  .list_text {
+    font-size: 1rem;
+  }
+  
+  .button {
+    padding: 0.5rem 1rem;
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .card {
+        width: 100%;
+        max-width: 20rem;
+    }
+  }
 
-    background-image: url(../imagenes/fondo-degradado-tonos-verdes_23-2148382072.avif);
-    background-position: center;
-    background-size: cover;
-}
 .calculator {
     max-width: 400px;
     margin: auto;
