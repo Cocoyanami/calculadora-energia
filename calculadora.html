@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Consumo de Energía</title>
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
     <header>
 
         <H1>Bienvenido a la calculadora de consumo de energía</H1>
@@ -12,10 +13,21 @@
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <path d="M13 3l0 7l6 0l-8 11l0 -7l-6 0l8 -11" />
           </svg>
+
+          <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calculadora.html">Calculadora</a></li>
+                <li><a href="info.html">Recomendaciones</a></li>
+                <li><a href="seleccion-dispositivos.html">Dispositivos</a></li>
+                <li><a href="soporte.html">Q&A</a></li>
+                <li><a href="registro.html">Login</a></li>
+            </ul>
+        </nav>
        </header>
    
 </head>
-<body>
+<main>
     <div class="calculator">
         <h2 class="titulo">Calculadora de Consumo de Energía</h2>
 
@@ -32,7 +44,7 @@
         
         <div class="result" id="result"></div>
     </div>
-
+ 
     <script>
         function calcularConsumo() {
             // Obtener los valores ingresados por el usuario
@@ -59,5 +71,50 @@
             document.getElementById('result').innerText = `Consumo mensual: ${consumoMensual.toFixed(2)} kWh`;
         }
     </script>
+
+</main>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+                <a href="#">
+                    <img src="images/.jpeg" class="menu-footer" alt="">
+                </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>SOBRE NOSOTROS</h2>
+            <p>Calculadora de energia gratuita para todo el mundo</p>
+                <a class="" href="../normatividad/aviso_de_privacidad.php" target="_blank"></a>
+        </div>
+        <div class="box">
+            <h2>SIGUENOS</h2>
+            <div class="red-social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small>&copy; 2024 <b>CALCULADOR DE ENERGIA</b> Para Todos </small>
+    </div>
+</footer>
+
 </body>
 </html>
