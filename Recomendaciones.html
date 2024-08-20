@@ -1,107 +1,205 @@
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    margin: 0;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendaciones</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+    <link href="css/nuevo.css" rel="stylesheet">
    
-}
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calculadora.html">Calculadora</a></li>
+                <li><a href="info.html">Recomendaciones</a></li>
+                <li><a href="seleccion-dispositivos.html">Dispositivos</a></li>
+                <li><a href="soporte.html">Q&A</a></li>
+                <li><a href="registro.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
 
-card-container {
-    display: flex;
-    flex-direction: row; 
-    align-items: center;
-    justify-content: center;
-    gap: 20px; 
-    width: 100%;
-    max-width: 1200px;
-    padding: 20px;
-    flex-wrap: wrap; 
-}
-card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 320px;
-    padding: 36px;
-    border-radius: 24px;
-    overflow: hidden;
-    line-height: 1.6;
-    border: 1px solid #f30505;
-    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
-    background: rgba(4, 86, 238, 0.9);
-    margin-bottom: 20px;
-}
 
-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
-    color: #0c0c0c;
-    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
-}
+    <br>
+    <br>
+    <br>
+    <br>
 
-content .heading {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.3;
-    z-index: 1;
-    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
-}
+    <main class="card-container">
+        <div class="card">
+            <div class="content">
+                <p class="heading">Recomendaciones de consumo de energía</p>
+                <p class="para">Te dejamos unas recomendaciones a continuación:</p>
+            </div>
+            <hr class="line">
+            <ul class="card__list">
+                <li class="card__list_item">
+                    <span class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="check_svg">
+                            <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path>
+                        </svg>
+                    </span>
+                    <span class="list_text">Desconecta tus equipos si no los usas</span>
+                </li>
+                <li class="card__list_item">
+                    <span class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="check_svg">
+                            <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path>
+                        </svg>
+                    </span>
+                    <span class="list_text">Apaga las luces que no uses</span>
+                </li>
+                <li class="card__list_item">
+                    <span class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="check_svg">
+                            <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path>
+                        </svg>
+                    </span>
+                    <span class="list_text">Modera tu consumo</span>
+                </li>
+                <li class="card__list_item">
+                    <span class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="check_svg">
+                            <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path>
+                        </svg>
+                    </span>
+                    <span class="list_text">Usa menos dispositivos</span>
+                </li>
+            </ul>
+           
+        </div>
+        <div class="card">
+            <div class="content">
+                <p class="heading">Recomendaciones de consumo de energía</p>
+                <p class="para">Te dejamos unas recomendaciones a continuación:</p>
+            </div>
+            <hr class="line">
+            <ul class="card__list">
+                <li class="card__list_item">
+                    <span class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="check_svg">
+                            <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path>
+                        </svg>
+                    </span>
+                    <span class="list_text">Desconecta tus equipos si no los usas</span>
+                </li>
+                <li class="card__list_item">
+                    <span class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="check_svg">
+                            <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path>
+                        </svg>
+                    </span>
+                    <span class="list_text">Apaga las luces que no uses</span>
+                </li>
+                <li class="card__list_item">
+                    <span class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="check_svg">
+                            <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path>
+                        </svg>
+                    </span>
+                    <span class="list_text">Modera tu consumo</span>
+                </li>
+                <li class="card__list_item">
+                    <span class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="check_svg">
+                            <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path>
+                        </svg>
+                    </span>
+                    <span class="list_text">Usa menos dispositivos</span>
+                </li>
+            </ul>
+            
+        </div>
+        <div class="card">
+            <div class="content">
+                <p class="heading">Recomendaciones de consumo de energía</p>
+                <p class="para">Te dejamos unas recomendaciones a continuación:</p>
+            </div>
+            <hr class="line">
+            <ul class="card__list">
+                <li class="card__list_item">
+                    <span class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="check_svg">
+                            <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path>
+                        </svg>
+                    </span>
+                    <span class="list_text">Desconecta tus equipos si no los usas</span>
+                </li>
+                <li class="card__list_item">
+                    <span class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="check_svg">
+                            <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path>
+                        </svg>
+                    </span>
+                    <span class="list_text">Apaga las luces que no uses</span>
+                </li>
+                <li class="card__list_item">
+                    <span class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="check_svg">
+                            <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path>
+                        </svg>
+                    </span>
+                    <span class="list_text">Modera tu consumo</span>
+                </li>
+                <li class="card__list_item">
+                    <span class="check">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="check_svg">
+                            <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path>
+                        </svg>
+                    </span>
+                    <span class="list_text">Usa menos dispositivos</span>
+                </li>
+            </ul>
+           
+        </div>
+        
+        
+    </main>
 
-content .para {
-    z-index: 1;
-    opacity: 0.8;
-    font-size: 16px;
-    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
-}
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
-card::before,
-card::after {
-    content: "";
-    position: absolute;
-    width: 10.4rem;
-    height: 10.4rem;
-    background: #141414;
-    z-index: 0;
-    opacity: 0;
-    border-radius: 50%;
-    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
-}
 
-card::before {
-    right: -5.2rem;
-    top: -5.2rem;
-}
-
-card::after {
-    left: -5.2rem;
-    bottom: -5.2rem;
-}
-
-card:hover::before {
-    scale: 7;
-    opacity: 1;
-}
-
-card:hover::after {
-    scale: 7;
-    opacity: 1;
-}
-
-card:hover .content .heading,
-card:hover .content .para {
-    color: #ec0c0c;
-}
-
-card:hover {
-    box-shadow: 0rem 6px 13px rgba(0, 0, 0, 0.1),
-        0rem 24px 24px rgba(0, 0, 0, 0.09), 0rem 55px 33px rgba(0, 0, 0, 0.05),
-        0rem 97px 39px rgba(0, 0, 0, 0.01), 0rem 152px 43px rgba(0, 0, 0, 0);
-    border-color: #ff0a0a;
-    scale: 1.05;
-}
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="images/.jpeg" class="menu-footer" alt="">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Calculadora de energía gratuita para todo el mundo</p>
+                    <a class="" href="../normatividad/aviso_de_privacidad.php" target="_blank"></a>
+            </div>
+            <div class="box">
+                <h2>SÍGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2024 <b>CALCULADOR DE ENERGÍA</b> Para Todos </small>
+        </div>
+    </footer>
+</body>
+</html>
